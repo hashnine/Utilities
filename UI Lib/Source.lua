@@ -5,6 +5,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
+local currentstatus = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/UI%20Lib/Status.lua"))()
 
 local Library = {
 	Themes = {
@@ -635,7 +636,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Status | Idle",
+		Text = "Status | "..currentstatus..,
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -754,7 +755,7 @@ function Library:create(options)
 
 		local displayName = profile:object("TextLabel", {
 			RichText = true,
-			Text = "Welcome, <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>",
+			Text = "Welcome,"
 			TextScaled = true,
 			Position = UDim2.new(0, 105,0, 10),
 			Theme = {TextColor3 = {"Tertiary", 10}},
@@ -783,8 +784,7 @@ function Library:create(options)
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = ("The date is " .. dt:FormatUniversalTime("LL", "en-us"))
-
+		Text = tostring(os.date("%X")):sub(1, os.date("%X"):len()-3)
 	})
 
 	do
@@ -897,7 +897,7 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Discord = "splash#0220"}
+	creditsTab:credit{Name = "splash", Description = "rabbitware developer"}
 
 	return mt
 end
