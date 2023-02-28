@@ -2,7 +2,8 @@ local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbit
 
 Module.Prompt({ invite = "https://discord.gg/8rpVZFap7w", name = "discord server name here" })
 
-Module.Join("https://discord.gg/8rpVZFap7w")
+-- Use this for force join instead of providing invite
+-- Module.Join("https://discord.gg/8rpVZFap7w")
 
 
 --[[
