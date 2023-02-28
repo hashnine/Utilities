@@ -412,7 +412,7 @@ function Library:create(options)
 		Name = "rabbitware",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/rabbitware"
+		Link = "rabbitware"
 	}, options)
 
 	if getgenv and getgenv().rabbitwareUI then
@@ -666,7 +666,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=8569322835",
+		Image = "http://www.roblox.com/asset/?id=2866390641",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
