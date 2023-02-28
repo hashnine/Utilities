@@ -783,7 +783,7 @@ function Library:create(options)
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = ""
+		Text = tostring(os.date("%X")):sub(1, os.date("%X"):len()-3)
 	})
 
 	do
@@ -2754,7 +2754,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				Theme = {BackgroundColor3 = {"Main", 10}}
-			}):round(5):tooltip("copy github")
+			}):round(5):tooltip("copy link")
 			local github = githubContainer:object("ImageLabel", {
 				Image = "http://www.roblox.com/asset/?id=11965755499",
 				Size = UDim2.new(1, -4, 1, -4),
