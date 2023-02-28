@@ -777,13 +777,14 @@ function Library:create(options)
 
 	local timeDisplay = profile:object("TextLabel", {
 		BackgroundTransparency = 1,
+        Transparency = 1,
 		Position = UDim2.new(0, 105, 1, -10),
 		Size = UDim2.new(0, 400,0, 20),
 		AnchorPoint = Vector2.new(0, 1),
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = LocalPlayer.Name
+		Text = tostring(os.date("%X")):sub(1, os.date("%X"):len()-3)
 	})
 
 	do
