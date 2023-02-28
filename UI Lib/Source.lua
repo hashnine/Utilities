@@ -783,7 +783,7 @@ function Library:create(options)
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = "The date is " .. dt:FormatLocalTime("LL", "en-us")
+		Text = ("The date is " .. dt:FormatUniversalTime("LL", "en-us"))
 
 	})
 
