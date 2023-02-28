@@ -5,7 +5,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
-local currentstatus = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/UI%20Lib/Status.lua"))()
+local currentstatus = 'Active'
 
 local Library = {
 	Themes = {
