@@ -5,7 +5,6 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
-local currentstatus
 
 local Library = {
 	Themes = {
