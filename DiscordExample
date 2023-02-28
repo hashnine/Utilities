@@ -1,8 +1,0 @@
-local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/DiscordModule"))()
-
-Module.Prompt({ invite = "discord invite here", name = "discord server name here" })
-
-Module.Join("discord invite here")
-
-
--- this is a free utility provided by rabbitware and is not to be licensed or sold // splash#0220
