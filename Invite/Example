@@ -1,0 +1,12 @@
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/DiscordModule"))()
+
+Module.Prompt({ invite = "discord invite here", name = "discord server name here" })
+
+Module.Join("discord invite here")
+
+
+-- [[
+  /)/)        
+( . .)       rabbitware
+( づ♡   
+-- ]]
