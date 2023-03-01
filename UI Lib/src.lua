@@ -671,7 +671,7 @@ function Library:create(options)
 		AnchorPoint = Vector2.new(0, 0.5),
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
-		Size = UDim2.new(0, 15, 0, 15),
+		Size = UDim2.new(0, 12, 0, 12),
 		Image = "http://www.roblox.com/asset/?id=11347112400",
 		Theme = {ImageColor3 = "StrongText"}
 	})
@@ -869,21 +869,13 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.Delete,
+		Keybind = Enum.KeyCode.RightControl,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
 		end,
 	}
 
-	settingsTab:toggle{
-		Name = "Skip Discord Invite",
-		Description = "Constant user? toggle to skip if already a member.",
-		StartingState = false,
-		Callback = function(skip)
-			Library.LockDragging = skip
-		end,
-	}
 
 	settingsTab:toggle{
 		Name = "Lock Dragging",
