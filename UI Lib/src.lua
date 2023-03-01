@@ -672,7 +672,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 12, 0, 12),
-		Image = "http://www.roblox.com/asset/?id=2866390630",
+		Image = "http://www.roblox.com/asset/?id=11396131982",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
