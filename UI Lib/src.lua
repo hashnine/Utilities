@@ -415,7 +415,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "home",
+		Name = "Home",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "rabbitware"
@@ -671,7 +671,7 @@ function Library:create(options)
 		AnchorPoint = Vector2.new(0, 0.5),
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
-		Size = UDim2.new(0, 12, 0, 12),
+		Size = UDim2.new(0, 17, 0, 17),
 		Image = "http://www.roblox.com/asset/?id=11347112400",
 		Theme = {ImageColor3 = "StrongText"}
 	})
@@ -818,7 +818,7 @@ function Library:create(options)
 	local creditsTabIcon = profile:object("ImageButton", {
 		BackgroundTransparency = 1,
 		Theme = {ImageColor3 = "WeakText"},
-		Size = UDim2.fromOffset(24, 24),
+		Size = UDim2.fromOffset(32, 32),
 		Position = UDim2.new(1, -44, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
 		Image = "http://www.roblox.com/asset/?id=8577523456"
@@ -859,7 +859,7 @@ function Library:create(options)
 	}, Library)
 
 	local settingsTab = Library.tab(mt, {
-		Name = "settings",
+		Name = "Settings",
 		Internal = settingsTabIcon,
 		Icon = "rbxassetid://8559790237"
 	})
@@ -897,7 +897,7 @@ function Library:create(options)
 	}
 
 	local creditsTab = Library.tab(mt, {
-		Name = "credits",
+		Name = "Credits",
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=8577523456"
 	})
