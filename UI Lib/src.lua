@@ -812,7 +812,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(24, 24),
 		Position = UDim2.new(1, -10, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
-		Image = "http://www.roblox.com/asset/?id=12646609352"
+		Image = "http://www.roblox.com/asset/?id=12646632491"
 	}):tooltip("settings")
 
 	local creditsTabIcon = profile:object("ImageButton", {
@@ -821,7 +821,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(24, 24),
 		Position = UDim2.new(1, -44, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
-		Image = "http://www.roblox.com/asset/?id=12646602825"
+		Image = "http://www.roblox.com/asset/?id=12646631340"
 	}):tooltip("credits")
 
 	local quickAccess = homePage:object("Frame", {
