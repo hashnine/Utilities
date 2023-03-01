@@ -877,6 +877,15 @@ function Library:create(options)
 	}
 
 	settingsTab:toggle{
+		Name = "Skip Discord Invite",
+		Description = "Constant user? toggle to skip if already a member.",
+		StartingState = false,
+		Callback = function(skip)
+			Library.LockDragging = skip
+		end,
+	}
+
+	settingsTab:toggle{
 		Name = "Lock Dragging",
 		Description = "Makes sure you can't drag the UI outside of the window.",
 		StartingState = true,
