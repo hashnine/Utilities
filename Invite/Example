@@ -1,13 +1,13 @@
-local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/Invite/DiscordModule"))()
-
-Module.Prompt({ invite = "https://discord.gg/8rpVZFap7w", name = "discord server name here" })
-
--- Use this for force join instead of providing invite
--- Module.Join("https://discord.gg/8rpVZFap7w")
-
-
 --[[
   /)/)        
-( . .)       rabbitware
+( . .)       rabbitware discord invite ui template
 ( づ♡   
 --]]
+
+
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/Invite/DiscordModule"))()
+
+Module.Prompt({ invite = "server invite here", name = "discord server name here" })
+
+-- Use this for force join instead of providing invite
+-- Module.Join("server invite here")
