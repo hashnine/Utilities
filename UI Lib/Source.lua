@@ -893,7 +893,7 @@ function Library:create(options)
 	rawset(mt, "creditsContainer", creditsTab.container)
 
 	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Github = "https://github.com/rabbitware"}
-	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", v3rmillion = "https://github.com/rabbitware"}
+	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", Discord = "percwalkk#0900"}
 
 	return mt
 end
@@ -2764,13 +2764,32 @@ function Library:credit(options)
 			end)
 		end
 	
+		if options.Youtube then
+			local youtubeContainer = creditContainer:object("TextButton", {
+				AnchorPoint = Vector2.new(1, 1),
+				Size = UDim2.fromOffset(24, 24),
+				Position = UDim2.new(1, -8, 1, -8),
+				Theme = {BackgroundColor3 = {"Main", 10}}
+			}):round(5):tooltip("copy link")
+			local youtube = youtubeContainer:object("ImageLabel", {
+				Image = "http://www.roblox.com/asset/?id=12352715243",
+				Size = UDim2.new(1, -4, 1, -4),
+				Centered = true,
+				BackgroundTransparency = 1
+			}):round(100)
+
+			youtubeContainer.MouseButton1Click:connect(function()
+				setclipboard(options.Youtube)
+			end)
+		end
+
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
-			}):round(5):tooltip("splash#0220")
+			}):round(5):tooltip("copy tag")
 			local discord = discordContainer:object("Frame", {
 				Size = UDim2.new(1, -6, 1, -6),
 				Centered = true,
