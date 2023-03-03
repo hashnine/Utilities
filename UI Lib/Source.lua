@@ -892,7 +892,7 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Github = "https://github.com/rabbitware"}
+	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Github = "https://github.com/rabbitware", Youtube = "https://www.youtube.com/channel/UCcupr0pKcZqUL07f37B5CWg"}
 	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", Discord = "percwalkk#0900", Youtube = "https://www.youtube.com/channel/UCBTELs5USLK_Z6aIC_rLCbA"}
 
 	return mt
@@ -2791,7 +2791,7 @@ function Library:credit(options)
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
 			}):round(5):tooltip("copy tag")
 			local discord = discordContainer:object("Frame", {
-				Size = UDim2.new(1, -6, 1, -6),
+				Size = UDim2.new(1, -4, 1, -4),
 				Centered = true,
 				BackgroundTransparency = 1
 			})
