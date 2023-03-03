@@ -782,7 +782,7 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
 
-	local timeDisplay = profile:object("TextLabel", {
+	local gameDisplay = profile:object("TextLabel", {
 		BackgroundTransparency = 1,
         Transparency = 0,
 		Position = UDim2.new(0, 105, 1, -10),
@@ -793,19 +793,6 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left,
 		Text = gamename
 	})
-
-	do
-		local desiredInterval = 1
-		local counter = 0
-		RunService.Heartbeat:Connect(function(step)
-			counter += step  
-			if counter >= desiredInterval then
-				counter -= desiredInterval
-				local date = tostring(os.date("%X"))
-				timeDisplay.Text = gamename
-			end
-		end)
-	end
 
 	local settingsTabIcon = profile:object("ImageButton", {
 		BackgroundTransparency = 1,
