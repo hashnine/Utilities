@@ -785,13 +785,25 @@ function Library:create(options)
 	local gameDisplay = profile:object("TextLabel", {
 		BackgroundTransparency = 1,
         Transparency = 0,
-		Position = UDim2.new(0, 109, 1, -10),
+		Position = UDim2.new(0, 105, 1, -10),
 		Size = UDim2.new(0, 400,0, 20),
 		AnchorPoint = Vector2.new(0, 1),
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
 		Text = gamename
+	})
+
+		local extraDisplay = profile:object("TextLabel", {
+		BackgroundTransparency = 1,
+        Transparency = 0,
+		Position = UDim2.new(0, 145,0, 10),
+		Size = UDim2.new(0, 400,0, 20),
+		AnchorPoint = Vector2.new(0, 1),
+		Theme = {TextColor3 = {"Tertiary", -20}},
+		TextScaled = true,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		Text = "Test"
 	})
 
 	local settingsTabIcon = profile:object("ImageButton", {
