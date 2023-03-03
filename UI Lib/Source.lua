@@ -2768,7 +2768,7 @@ function Library:credit(options)
 			local youtubeContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.fromOffset(24, 24),
-				Position = UDim2.new(1, -40, 1, -8),
+				Position = UDim2.new(1, -10, 1, -10),
 				Theme = {BackgroundColor3 = {"Main", 10}}
 			}):round(5):tooltip("copy link")
 			local youtube = youtubeContainer:object("ImageLabel", {
