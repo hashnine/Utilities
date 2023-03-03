@@ -794,18 +794,6 @@ function Library:create(options)
 		Text = gamename
 	})
 
-		local extraDisplay = profile:object("TextLabel", {
-		BackgroundTransparency = 1,
-        Transparency = 0,
-		Position = UDim2.new(0, 145,0, 10),
-		Size = UDim2.new(0, 400,0, 20),
-		AnchorPoint = Vector2.new(0, 1),
-		Theme = {TextColor3 = {"Tertiary", -20}},
-		TextScaled = true,
-		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = "Test"
-	})
-
 	local settingsTabIcon = profile:object("ImageButton", {
 		BackgroundTransparency = 1,
 		Theme = {ImageColor3 = "WeakText"},
@@ -905,6 +893,7 @@ function Library:create(options)
 	rawset(mt, "creditsContainer", creditsTab.container)
 
 	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Github = "https://github.com/rabbitware"}
+	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", v3rmillion = "https://github.com/rabbitware"}
 
 	return mt
 end
@@ -2839,7 +2828,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -40, 1, -8),
 				Theme = {BackgroundColor3 = {"Main", 10}}
-			}):round(5):tooltip("copy v3rm")
+			}):round(5):tooltip("copy link")
 			local v3rmillion = v3rmillionContainer:object("ImageLabel", {
 				Image = "http://www.roblox.com/asset/?id=8594086769",
 				Size = UDim2.new(1, -4, 1, -4),
