@@ -11,6 +11,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
+local gamename = "Game Name"
 
 local Library = {
 	Themes = {
@@ -790,7 +791,7 @@ function Library:create(options)
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = "Hoop Central 6"
+		Text = gamename
 	})
 
 	do
@@ -801,7 +802,7 @@ function Library:create(options)
 			if counter >= desiredInterval then
 				counter -= desiredInterval
 				local date = tostring(os.date("%X"))
-				timeDisplay.Text = date:sub(1, date:len()-3)
+				timeDisplay.Text = gamename
 			end
 		end)
 	end
