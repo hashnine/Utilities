@@ -782,7 +782,7 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
 
-	local gamenameDisplay = profile:object("TextLabel", {
+	local gameDisplay = profile:object("TextLabel", {
 		BackgroundTransparency = 1,
         Transparency = 0,
 		Position = UDim2.new(0, 105, 1, -10),
