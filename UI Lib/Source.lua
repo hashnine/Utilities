@@ -782,7 +782,7 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
 
-	local gameDisplay = profile:object("TextLabel", {
+	local timeDisplay = profile:object("TextLabel", {
 		BackgroundTransparency = 1,
         Transparency = 0,
 		Position = UDim2.new(0, 105, 1, -10),
@@ -793,6 +793,12 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left,
 		Text = gamename
 	})
+
+	do
+				timeDisplay.Text = gamename
+			end
+		end)
+	end
 
 	local settingsTabIcon = profile:object("ImageButton", {
 		BackgroundTransparency = 1,
