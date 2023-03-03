@@ -795,6 +795,13 @@ function Library:create(options)
 	})
 
 	do
+		local desiredInterval = 1
+		local counter = 0
+		RunService.Heartbeat:Connect(function(step)
+			counter += step  
+			if counter >= desiredInterval then
+				counter -= desiredInterval
+				local date = tostring(os.date("%X"))
 				timeDisplay.Text = gamename
 			end
 		end)
