@@ -893,7 +893,7 @@ function Library:create(options)
 	rawset(mt, "creditsContainer", creditsTab.container)
 
 	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Github = "https://github.com/rabbitware"}
-	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", Discord = "percwalkk#0900"}
+	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", Discord = "percwalkk#0900", Youtube = "percwalkk#0900"}
 
 	return mt
 end
@@ -2768,7 +2768,7 @@ function Library:credit(options)
 			local youtubeContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.fromOffset(24, 24),
-				Position = UDim2.new(1, -8, 1, -8),
+				Position = UDim2.new(1, -40, 1, -8),
 				Theme = {BackgroundColor3 = {"Main", 10}}
 			}):round(5):tooltip("copy link")
 			local youtube = youtubeContainer:object("ImageLabel", {
