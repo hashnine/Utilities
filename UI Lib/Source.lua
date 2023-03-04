@@ -11,7 +11,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
-local gamename = "Game Names"
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 
 local Library = {
 	Themes = {
@@ -791,7 +791,7 @@ function Library:create(options)
 		Theme = {TextColor3 = {"WeakText", -20}},
 		TextScaled = true,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = gamename
+		Text = "HWID: "..hwid
 	})
 
 	local settingsTabIcon = profile:object("ImageButton", {
