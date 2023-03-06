@@ -141,6 +141,8 @@ function Library:Window(options)
     sbLine.Name = "sbLine"
     sbLine.Parent = SideBar
     sbLine.BackgroundColor3 = Color3.fromRGB(15, 23, 36)
+    sbLine.BackgroundTransparency = 0
+    sbLine.Transparency = 0
     sbLine.BorderSizePixel = 0
     sbLine.Position = UDim2.new(0.99490571, 0, 0, 0)
     sbLine.Size = UDim2.new(0, 3, 0, 325)
