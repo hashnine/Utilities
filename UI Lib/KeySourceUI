@@ -122,28 +122,11 @@ function Library:Window(options)
     Body.BackgroundColor3 = Color3.fromRGB(9, 8, 13)
     Body.BorderSizePixel = 0
     Body.Position = UDim2.new(0.465730786, 0, 0.5, 0)
-    Body.Size = UDim2.new(0, 618, 0, 325)
+    Body.Size = UDim2.new(0, 420, 0, 285)
 
     bodyCorner.CornerRadius = UDim.new(0, 4)
     bodyCorner.Name = "bodyCorner"
     bodyCorner.Parent = Body
-
-    SideBar.Name = "SideBar"
-    SideBar.Parent = Body
-    SideBar.BackgroundColor3 = Color3.fromRGB(26, 36, 48)
-    SideBar.BorderSizePixel = 0
-    SideBar.Size = UDim2.new(0, 140, 0, 325)
-
-    sidebarCorner.CornerRadius = UDim.new(0, 4)
-    sidebarCorner.Name = "sidebarCorner"
-    sidebarCorner.Parent = SideBar
-
-    sbLine.Name = "sbLine"
-    sbLine.Parent = SideBar
-    sbLine.BackgroundColor3 = Color3.fromRGB(15, 23, 36)
-    sbLine.BorderSizePixel = 0
-    sbLine.Position = UDim2.new(0.99490571, 0, 0, 0)
-    sbLine.Size = UDim2.new(0, 3, 0, 325)
 
     TopBar.Name = "TopBar"
     TopBar.Parent = Body
