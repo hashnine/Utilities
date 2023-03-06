@@ -130,7 +130,7 @@ function Library:Window(options)
     Body.BackgroundColor3 = Color3.fromRGB(9, 8, 13)
     Body.BorderSizePixel = 0
     Body.Position = UDim2.new(0.465730786, 0, 0.5, 0)
-    Body.Size = UDim2.new(0, 328, 0, 144)
+    Body.Size = UDim2.new(0, 658, 0, 233)
 
     bodyCorner.CornerRadius = UDim.new(0, 4)
     bodyCorner.Name = "bodyCorner"
