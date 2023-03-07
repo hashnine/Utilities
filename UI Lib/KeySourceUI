@@ -210,7 +210,7 @@ function Library:Window(options)
     tabContainer.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
     tabContainer.BackgroundTransparency = 1.000
     tabContainer.BorderSizePixel = 0
-    tabContainer.Position = UDim2.new(0, 0, 0.100775197, 0)
+    tabContainer.Position = UDim2.new(0, 0, 2.00775197, 0)
     tabContainer.Size = UDim2.new(0, 187, 0, 464)
 
     local tabsections = {}
