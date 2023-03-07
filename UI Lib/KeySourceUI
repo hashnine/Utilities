@@ -270,7 +270,7 @@ function Library:Window(options)
 
             tabButton.Name = "tabButton"
             tabButton.Parent = tabSection
-            tabButton.BackgroundColor3 = Color3.fromRGB(13, 57, 84)
+            tabButton.BackgroundColor3 = Color3.fromRGB(32, 32, 39)
             tabButton.BorderSizePixel = 0
             tabButton.Position = UDim2.new(0.0714285746, 0, 0.402777791, 0)
             tabButton.Size = UDim2.new(0, 165, 0, 30)
@@ -406,7 +406,7 @@ function Library:Window(options)
                     local TextButton = Instance.new("TextButton")
 
                     TextButton.Parent = sectionFrame
-                    TextButton.BackgroundColor3 = Color3.fromRGB(13, 57, 84)
+                    TextButton.BackgroundColor3 = Color3.fromRGB(32, 32, 39)
                     TextButton.BorderSizePixel = 0
                     TextButton.Position = UDim2.new(0.0348837227, 0, 0.355555564, 0)
                     TextButton.Size = UDim2.new(0, 200, 0, 22)
