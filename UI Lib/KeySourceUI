@@ -231,7 +231,7 @@ function Library:Window(options)
         tabSection.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
         tabSection.BackgroundTransparency = 1.000
         tabSection.BorderSizePixel = 0
-        tabSection.Size = UDim2.new(0, 189, 0, 22)
+        tabSection.Size = UDim2.new(0, 169, 0, 22)
 
         local function ResizeTS(num)
             tabSection.Size += UDim2.new(0, 0, 0, num)
