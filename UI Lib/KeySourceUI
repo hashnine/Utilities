@@ -170,7 +170,7 @@ function Library:Window(options)
     Title.Size = UDim2.new(0, 162, 0, 26)
     Title.Font = Enum.Font.ArialBold
     Title.Text = options.text
-    Title.TextColor3 = Color3.fromRGB(234, 239, 245)
+    Title.TextColor3 = Color3.fromRGB(130, 189, 240)
     Title.TextSize = 28.000
     Title.TextWrapped = true
 
@@ -245,7 +245,7 @@ function Library:Window(options)
         tabSectionLabel.Size = UDim2.new(0, 190, 0, 22)
         tabSectionLabel.Font = Enum.Font.Gotham
         tabSectionLabel.Text = "     ".. options.text
-        tabSectionLabel.TextColor3 = Color3.fromRGB(50, 50, 54)
+        tabSectionLabel.TextColor3 = Color3.fromRGB(95, 154, 203)
         tabSectionLabel.TextSize = 17.000
         tabSectionLabel.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -307,18 +307,18 @@ function Library:Window(options)
 
             tabIcon.Name = "tabIcon"
             tabIcon.Parent = tabButton
-            tabIcon.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+            tabIcon.BackgroundColor3 = Color3.fromRGB(70, 130, 180)
             tabIcon.BackgroundTransparency = 1.000
             tabIcon.BorderSizePixel = 0
             tabIcon.Position = UDim2.new(0.0408859849, 0, 0.133333355, 0)
             tabIcon.Size = UDim2.new(0, 21, 0, 21)
             tabIcon.Image = options.icon
-            tabIcon.ImageColor3 = Color3.fromRGB(219, 219, 219)
+            tabIcon.ImageColor3 = Color3.fromRGB(70, 130, 180)
 
             newPage.Name = "newPage"
             newPage.Parent = allPages
             newPage.Visible = false
-            newPage.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+            newPage.BackgroundColor3 = Color3.fromRGB(70, 130, 180)
             newPage.BackgroundTransparency = 1.000
             newPage.BorderSizePixel = 0
             newPage.ClipsDescendants = false
