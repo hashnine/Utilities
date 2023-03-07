@@ -130,7 +130,7 @@ function Library:Window(options)
 
     SideBar.Name = "SideBar"
     SideBar.Parent = Body
-    SideBar.BackgroundColor3 = Color3.fromRGB(26, 36, 48)
+    SideBar.BackgroundColor3 = Color3.fromRGB(43, 43, 48)
     SideBar.BorderSizePixel = 0
     SideBar.Size = UDim2.new(0, 187, 0, 325)
 
@@ -140,7 +140,7 @@ function Library:Window(options)
 
     sbLine.Name = "sbLine"
     sbLine.Parent = SideBar
-    sbLine.BackgroundColor3 = Color3.fromRGB(15, 23, 36)
+    sbLine.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     sbLine.BorderSizePixel = 0
     sbLine.Position = UDim2.new(0.99490571, 0, 0, 0)
     sbLine.Size = UDim2.new(0, 3, 0, 325)
