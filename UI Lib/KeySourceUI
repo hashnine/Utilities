@@ -156,7 +156,7 @@ function Library:Window(options)
 
     tbLine.Name = "tbLine"
     tbLine.Parent = TopBar
-    tbLine.BackgroundColor3 = Color3.fromRGB(15, 23, 36)
+    tbLine.BackgroundColor3 = Color3.fromRGB(9, 8, 13)
     tbLine.BorderSizePixel = 0
     tbLine.Position = UDim2.new(0.0400355868, 0, 1, 0)
     tbLine.Size = UDim2.new(0, 469, 0, 3)
@@ -245,7 +245,7 @@ function Library:Window(options)
         tabSectionLabel.Size = UDim2.new(0, 190, 0, 22)
         tabSectionLabel.Font = Enum.Font.Gotham
         tabSectionLabel.Text = "     ".. options.text
-        tabSectionLabel.TextColor3 = Color3.fromRGB(79, 107, 126)
+        tabSectionLabel.TextColor3 = Color3.fromRGB(9, 8, 13)
         tabSectionLabel.TextSize = 17.000
         tabSectionLabel.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -313,7 +313,7 @@ function Library:Window(options)
             tabIcon.Position = UDim2.new(0.0408859849, 0, 0.133333355, 0)
             tabIcon.Size = UDim2.new(0, 21, 0, 21)
             tabIcon.Image = options.icon
-            tabIcon.ImageColor3 = Color3.fromRGB(43, 154, 198)
+            tabIcon.ImageColor3 = Color3.fromRGB(219, 219, 219)
 
             newPage.Name = "newPage"
             newPage.Parent = allPages
@@ -629,7 +629,7 @@ function Library:Window(options)
 
                     sliderTextBox.Name = "sliderTextBox"
                     sliderTextBox.Parent = sliderLabel
-                    sliderTextBox.BackgroundColor3 = Color3.fromRGB(1, 7, 17)
+                    sliderTextBox.BackgroundColor3 = Color3.fromRGB(43, 43, 48)
                     sliderTextBox.AnchorPoint = Vector2.new(0.5, 0.5)
                     sliderTextBox.Position = UDim2.new(2.4, 0, 0.5, 0)
                     sliderTextBox.Size = UDim2.new(0, 31, 0, 15)
@@ -827,7 +827,7 @@ function Library:Window(options)
                     textBox.Name = "textBox"
                     textBox.Parent = Textbox
                     textBox.AnchorPoint = Vector2.new(0.5, 0.5)
-                    textBox.BackgroundColor3 = Color3.fromRGB(1, 7, 17)
+                    textBox.BackgroundColor3 = Color3.fromRGB(43, 43, 48)
                     textBox.Position = UDim2.new(0.850000024, 0, 0.5, 0)
                     textBox.Size = UDim2.new(0, 53, 0, 15)
                     textBox.Font = Enum.Font.Gotham
@@ -935,7 +935,7 @@ function Library:Window(options)
                     RGBCircle.Parent = RGB
                     RGBCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     RGBCircle.BackgroundTransparency = 1.000
-                    RGBCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+                    RGBCircle.BorderColor3 = Color3.fromRGB(66, 66, 73)
                     RGBCircle.BorderSizePixel = 0
                     RGBCircle.Size = UDim2.new(0, 14, 0, 14)
                     RGBCircle.Image = "rbxassetid://3926309567"
