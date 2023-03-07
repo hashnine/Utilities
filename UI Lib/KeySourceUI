@@ -62,7 +62,7 @@ local function buttoneffect(options)
         options.entered.MouseEnter:Connect(function()
             if options.frame.TextColor3 ~= Color3.fromRGB(234, 239, 246) then
                 TweenService:Create(options.frame, TweenInfo.new(0.06, Enum.EasingStyle.Quart, Enum.EasingDirection.In), {
-                    TextColor3 = Color3.fromRGB(234, 239, 245)
+                    TextColor3 = Color3.fromRGB(25, 25, 25)
                 }):Play()
             end
         end)
@@ -163,14 +163,14 @@ function Library:Window(options)
 
     Title.Name = "Title"
     Title.Parent = SideBar
-    Title.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+    Title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Title.BackgroundTransparency = 1.000
     Title.BorderSizePixel = 0
     Title.Position = UDim2.new(0.0614973232, 0, 0.0213178284, 0)
     Title.Size = UDim2.new(0, 162, 0, 26)
     Title.Font = Enum.Font.ArialBold
     Title.Text = options.text
-    Title.TextColor3 = Color3.fromRGB(234, 239, 245)
+    Title.TextColor3 = Color3.fromRGB(25, 25, 25)
     Title.TextSize = 28.000
     Title.TextWrapped = true
 
@@ -188,7 +188,7 @@ function Library:Window(options)
 
     saveLabel.Name = "saveLabel"
     saveLabel.Parent = saveBtn
-    saveLabel.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+    saveLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     saveLabel.BackgroundTransparency = 1.000
     saveLabel.BorderSizePixel = 0
     saveLabel.Position = UDim2.new(0.0862553269, 0, 0.0500000007, 0)
@@ -199,7 +199,7 @@ function Library:Window(options)
 
     allPages.Name = "allPages"
     allPages.Parent = Body
-    allPages.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+    allPages.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     allPages.BackgroundTransparency = 1.000
     allPages.BorderSizePixel = 0
     allPages.Position = UDim2.new(0.29508087, 0, 0.100775197, 0)
@@ -207,7 +207,7 @@ function Library:Window(options)
 
     tabContainer.Name = "tabContainer"
     tabContainer.Parent = SideBar
-    tabContainer.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+    tabContainer.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     tabContainer.BackgroundTransparency = 1.000
     tabContainer.BorderSizePixel = 0
     tabContainer.Position = UDim2.new(0, 0, 0.100775197, 0)
@@ -228,7 +228,7 @@ function Library:Window(options)
 
         tabSection.Name = "tabSection"
         tabSection.Parent = tabContainer
-        tabSection.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+        tabSection.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
         tabSection.BackgroundTransparency = 1.000
         tabSection.BorderSizePixel = 0
         tabSection.Size = UDim2.new(0, 169, 0, 22)
@@ -239,7 +239,7 @@ function Library:Window(options)
 
         tabSectionLabel.Name = "tabSectionLabel"
         tabSectionLabel.Parent = tabSection
-        tabSectionLabel.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+        tabSectionLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
         tabSectionLabel.BackgroundTransparency = 1.000
         tabSectionLabel.BorderSizePixel = 0
         tabSectionLabel.Size = UDim2.new(0, 190, 0, 22)
@@ -277,7 +277,7 @@ function Library:Window(options)
             tabButton.AutoButtonColor = false
             tabButton.Font = Enum.Font.GothamSemibold
             tabButton.Text = "         " .. options.text
-            tabButton.TextColor3 = Color3.fromRGB(234, 239, 245)
+            tabButton.TextColor3 = Color3.fromRGB(25, 25, 25)
             tabButton.TextSize = 14.000
             tabButton.BackgroundTransparency = 1
             tabButton.TextXAlignment = Enum.TextXAlignment.Left
@@ -307,7 +307,7 @@ function Library:Window(options)
 
             tabIcon.Name = "tabIcon"
             tabIcon.Parent = tabButton
-            tabIcon.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+            tabIcon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
             tabIcon.BackgroundTransparency = 1.000
             tabIcon.BorderSizePixel = 0
             tabIcon.Position = UDim2.new(0.0408859849, 0, 0.133333355, 0)
@@ -318,7 +318,7 @@ function Library:Window(options)
             newPage.Name = "newPage"
             newPage.Parent = allPages
             newPage.Visible = false
-            newPage.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+            newPage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
             newPage.BackgroundTransparency = 1.000
             newPage.BorderSizePixel = 0
             newPage.ClipsDescendants = false
@@ -358,14 +358,14 @@ function Library:Window(options)
 
                 sectionLabel.Name = "sectionLabel"
                 sectionLabel.Parent = sectionFrame
-                sectionLabel.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+                sectionLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
                 sectionLabel.BackgroundTransparency = 1.000
                 sectionLabel.BorderSizePixel = 0
                 sectionLabel.Position = UDim2.new(0.0121902823, 0, 0, 0)
                 sectionLabel.Size = UDim2.new(0, 213, 0, 25)
                 sectionLabel.Font = Enum.Font.GothamSemibold
                 sectionLabel.Text = "   " .. options.text
-                sectionLabel.TextColor3 = Color3.fromRGB(234, 239, 245)
+                sectionLabel.TextColor3 = Color3.fromRGB(25, 25, 25)
                 sectionLabel.TextSize = 14.000
                 sectionLabel.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -635,7 +635,7 @@ function Library:Window(options)
                     sliderTextBox.Size = UDim2.new(0, 31, 0, 15)
                     sliderTextBox.Font = Enum.Font.Gotham
                     sliderTextBox.Text = options.min
-                    sliderTextBox.TextColor3 = Color3.fromRGB(234, 239, 245)
+                    sliderTextBox.TextColor3 = Color3.fromRGB(25, 25, 25)
                     sliderTextBox.TextSize = 11.000
                     sliderTextBox.TextWrapped = true
 
@@ -707,7 +707,7 @@ function Library:Window(options)
                     dropdownText.Size = UDim2.new(0, 87, 0, 18)
                     dropdownText.Font = Enum.Font.Gotham
                     dropdownText.Text = " " .. options.default
-                    dropdownText.TextColor3 = Color3.fromRGB(234, 239, 245)
+                    dropdownText.TextColor3 = Color3.fromRGB(25, 25, 25)
                     dropdownText.TextSize = 12.000
                     dropdownText.TextXAlignment = Enum.TextXAlignment.Left
                     dropdownText.TextWrapped = true
@@ -725,7 +725,7 @@ function Library:Window(options)
                     dropdownArrow.MouseButton1Click:Connect(function()
                         Dropped = not Dropped
                         if Dropped then
-                            if dropdownLabel.TextColor3 ~= Color3.fromRGB(234, 239, 245) then
+                            if dropdownLabel.TextColor3 ~= Color3.fromRGB(25, 25, 25) then
                                 TweenService:Create(dropdownLabel, TweenInfo.new(0.06, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
                                     TextColor3 = Color3.fromRGB(234, 239, 246)
                                 }):Play()
@@ -771,14 +771,14 @@ function Library:Window(options)
 
                         dropdownBtn.Name = "dropdownBtn"
                         dropdownBtn.Parent = dropdownList
-                        dropdownBtn.BackgroundColor3 = Color3.fromRGB(234, 239, 245)
+                        dropdownBtn.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
                         dropdownBtn.BackgroundTransparency = 1.000
                         dropdownBtn.BorderSizePixel = 0
                         dropdownBtn.Position = UDim2.new(-0.0110929646, 0, 0.0305557251, 0)
                         dropdownBtn.Size = UDim2.new(0, 87, 0, 18)
                         dropdownBtn.AutoButtonColor = false
                         dropdownBtn.Font = Enum.Font.Gotham
-                        dropdownBtn.TextColor3 = Color3.fromRGB(234, 239, 245)
+                        dropdownBtn.TextColor3 = Color3.fromRGB(25, 25, 25)
                         dropdownBtn.TextSize = 12.000
                         dropdownBtn.Text = v
                         dropdownBtn.ZIndex = 15
@@ -832,7 +832,7 @@ function Library:Window(options)
                     textBox.Size = UDim2.new(0, 53, 0, 15)
                     textBox.Font = Enum.Font.Gotham
                     textBox.Text = options.value
-                    textBox.TextColor3 = Color3.fromRGB(234, 239, 245)
+                    textBox.TextColor3 = Color3.fromRGB(25, 25, 25)
                     textBox.TextSize = 11.000
                     textBox.TextWrapped = true
 
@@ -968,7 +968,7 @@ function Library:Window(options)
                     colorHex.Size = UDim2.new(0, 94, 0, 24)
                     colorHex.Font = Enum.Font.GothamSemibold
                     colorHex.Text = "#FFFFFF"
-                    colorHex.TextColor3 = Color3.fromRGB(234, 239, 245)
+                    colorHex.TextColor3 = Color3.fromRGB(25, 25, 25)
                     colorHex.TextSize = 14.000
                     colorHex.ZIndex = 16
 
@@ -979,7 +979,7 @@ function Library:Window(options)
                     Copy.AutoButtonColor = false
                     Copy.Font = Enum.Font.GothamSemibold
                     Copy.Text = "Copy"
-                    Copy.TextColor3 = Color3.fromRGB(234, 239, 245)
+                    Copy.TextColor3 = Color3.fromRGB(25, 25, 25)
                     Copy.TextSize = 14.000
                     Copy.ZIndex = 16
                     Resize(25)
