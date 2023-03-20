@@ -5,9 +5,19 @@
 --]]
 
 
-local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/rabbitware/Utilities/main/Invite/DiscordModule"))()
+-- Define variables
+local DiscordModuleURL = "https://raw.githubusercontent.com/rabbitware/Utilities/main/Invite/DiscordModule"
+local DiscordServerInvite = "server invite here"
+local DiscordServerName = "discord server name here"
+local ShouldForceJoin = false
 
-Module.Prompt({ invite = "server invite here", name = "discord server name here" })
+-- Load the DiscordModule from the specified URL
+local Module = loadstring(game:HttpGet(DiscordModuleURL))()
 
--- Use this for force join instead of providing invite
--- Module.Join("server invite here")
+-- Prompt the user to join the Discord server
+Module.Prompt({ invite = DiscordServerInvite, name = DiscordServerName })
+
+-- If ShouldForceJoin is true, then join the server without prompting the user
+if ShouldForceJoin then
+    Module.Join(DiscordServerInvite)
+end
