@@ -1085,7 +1085,7 @@ function library:Introduction()
     hashnine.BackgroundTransparency = 1.000
     hashnine.Size = UDim2.new(0, 88, 0, 21)
     hashnine.Font = Enum.Font.SourceSansBold
-    hashnine.Text = "                       discord.gg/hashnine"
+    hashnine.Text = "                                    discord.gg/hashnine"
     hashnine.TextColor3 = Color3.fromRGB(124, 124, 124)
     hashnine.TextSize = 16
     hashnine.TextTransparency = 1
