@@ -1,6 +1,6 @@
 --[[
   /)/)        
-( . .)       rabbitware ui library
+( . .)       hashnine ui library -- i needa change rabbit icon to sumn else
 ( づ♡   
 --]]
 
@@ -404,14 +404,14 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("rabbitwareSettings.json") then
-			writefile("rabbitwareSettings.json", HTTPService:JSONEncode(settings))
+		if not isfile("hashnineSettings.json") then
+			writefile("hashnineSettings.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("rabbitwareSettings.json"))
+		settings = HTTPService:JSONDecode(readfile("hashnineSettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("rabbitwareSettings.json", HTTPService:JSONEncode(settings))
+			writefile("hashnineSettings.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
@@ -419,12 +419,12 @@ function Library:create(options)
 		Name = "Home",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "rabbitware"
+		Link = "hashnine"
 	}, options)
 
-	if getgenv and getgenv().rabbitwareUI then
-		getgenv():rabbitwareUI()
-		getgenv().rabbitwareUI = nil
+	if getgenv and getgenv().hashnineUI then
+		getgenv():hashnineUI()
+		getgenv().hashnineUI = nil
 	end
 
 
@@ -573,7 +573,7 @@ function Library:create(options)
 	end
 
 	if getgenv then
-		getgenv().rabbitwareUI = closeUI
+		getgenv().hashnineUI = closeUI
 	end
 
 	closeButton.MouseButton1Click:connect(function()
@@ -673,7 +673,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 12, 0, 12),
-		Image = "http://www.roblox.com/asset/?id=11396131982",
+		Image = "http://www.roblox.com/asset/?id=9365069861",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
@@ -892,8 +892,8 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "splash", Description = "rabbitware developer", Github = "https://github.com/rabbitware", Youtube = "https://www.youtube.com/channel/UCcupr0pKcZqUL07f37B5CWg"}
-	creditsTab:credit{Name = "percwalkk", Description = "rabbitware scripter", Discord = "percwalkk#0900", Youtube = "https://www.youtube.com/channel/UCBTELs5USLK_Z6aIC_rLCbA"}
+	creditsTab:credit{Name = "splash", Description = "hashnine developer", Github = "https://github.com/hashnine", Youtube = "https://www.youtube.com/channel/UCcupr0pKcZqUL07f37B5CWg"}
+	creditsTab:credit{Name = "percwalkk", Description = "hashnine scripter", Discord = "percwalkk#0900", Youtube = "https://www.youtube.com/channel/UCBTELs5USLK_Z6aIC_rLCbA"}
 
 	return mt
 end
