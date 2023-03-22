@@ -797,6 +797,15 @@ function library:Introduction()
     pageLayout.SortOrder = Enum.SortOrder.LayoutOrder
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
+    CreateTween("hashnineRotation", 0)
+    local MinusAmount = -16
+    coroutine.wrap(function()
+        while wait() do
+            MinusAmount = MinusAmount + 0.4
+            TweenService:Create(hashnineLogo, TweenTable["hashnineRotation"], {Rotation = hashnineLogo.Rotation - MinusAmount}):Play()
+        end
+    end)()
+
     TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     wait(.2)
