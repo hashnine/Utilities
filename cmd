@@ -1110,7 +1110,7 @@ function library:Introduction()
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
     CreateTween("hashnineRotation", 0)
-    local MinusAmount = -6
+    local MinusAmount = 5.7
     coroutine.wrap(function()
         while wait() do
             MinusAmount = MinusAmount + 0.4
