@@ -1,8 +1,25 @@
 --[[
   /)/)        
-( . .)       hashnine ui library -- i needa change rabbit icon to sumn else
+( . .)       hashnine ui library
 ( づ♡   
 --]]
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hashnine/Utilities/main/docs"))()
+
+
+local Notif = library:InitNotifications()
+
+for i = 0,0,-1 do 
+    task.wait(0.05)
+    local Loadinghash = Notif:Notify("Loading hashnine v2, please be patient.", 3, "information") -- notification, alert, error, success, information
+end 
+
+local Wm = library:Watermark("hashnine | v" .. library.version ..  " | " .. library:GetUsername())
+library.title = "hashnine"
+
+library:Introduction()
+
+
 
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
