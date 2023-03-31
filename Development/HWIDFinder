@@ -1,0 +1,2 @@
+local userhwid = game:GetService("RbxAnalyticsService"):GetClientId()
+setclipboard(userhwid)
