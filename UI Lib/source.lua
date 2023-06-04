@@ -7,7 +7,7 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚════╝ 
 --]]
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hashnine/Utilities/main/functions"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hashnine/Utilities/main/docs"))()
 
 
 local Notif = library:InitNotifications()
