@@ -1,0 +1,41 @@
+-- // i have no idea how this will be useful but here
+-- // how to get api_dev_key go to https://pastebin.com/doc_api
+-- // this creates a guest pastebin not a paste under your account, if you want under your account go to 
+
+local pasteName = "MyScript.lua"
+local pasteCode = "print('Hello, World!')"
+
+local http_request = http_request or request or http.request
+
+local pasteData = {
+    api_dev_key = "YOUR_DEV_KEY",
+    api_option = "paste",
+    api_paste_private = "0",  -- 0: Public, 1: Unlisted, 2: Private
+    api_paste_expire_date = "N",  -- N: Never, 10M: 10 Minutes, 1H: 1 Hour, 1D: 1 Day, 1W: 1 Week, 2W: 2 Weeks, 1M: 1 Month
+}
+
+pasteData.api_paste_name = pasteName
+pasteData.api_paste_code = pasteCode
+
+local postData = {}
+
+for key, value in pairs(pasteData) do
+    table.insert(postData, string.format("%s=%s", key, value))
+end
+
+postData = table.concat(postData, "&")
+
+local response = http_request({
+    Url = "https://pastebin.com/api/api_post.php",
+    Method = "POST",
+    Headers = {
+        ["Content-Type"] = "application/x-www-form-urlencoded",
+    },
+    Body = postData
+})
+
+if response.Success then
+    print(response.Body)
+else
+    warn("Failed to make HTTP request:", response.StatusCode, response.Body)
+end
