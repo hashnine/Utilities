@@ -1,6 +1,7 @@
 -- // i have no idea how this will be useful but here
+-- // this creates a pastebin paste under a guest account
 -- // how to get api_dev_key go to https://pastebin.com/doc_api
--- // this creates a guest pastebin not a paste under your account, if you want under your account go to 
+-- // if you want under your account go to https://github.com/hashnine/Utilities/blob/main/createPaste/user-creation.hashnine
 
 local pasteName = "MyScript.lua"
 local pasteCode = "print('Hello, World!')"
