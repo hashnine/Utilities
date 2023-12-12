@@ -1,0 +1,51 @@
+-- This is how to create a one-time use Discord invite follow the footnotes. 
+
+
+-- Replace 'YOUR_DISCORD_WEBHOOK_URL' with your actual Discord webhook URL
+local webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL'
+
+-- Function to create a one-time use Discord invite
+function createOneTimeInvite()
+    local apiUrl = 'https://discord.com/api/v10/channels/YOUR_CHANNEL_ID/invites' -- Replace 'YOUR_CHANNEL_ID' with the Discord channel ID
+
+    local postData = {
+        max_uses = 1, -- One-time use
+        max_age = 0, -- Expires immediately after being used
+    }
+
+    local headers = {
+        ['Content-Type'] = 'application/json',
+        ['Authorization'] = 'Bot YOUR_BOT_TOKEN', -- Replace 'YOUR_BOT_TOKEN' with your Discord bot token
+    }
+
+    local success, response = pcall(function()
+        return game:GetService('HttpService'):RequestAsync({
+            Url = apiUrl,
+            Method = 'POST',
+            Headers = headers,
+            Body = game:GetService('HttpService'):JSONEncode(postData),
+        })
+    end)
+
+    if success and response.Success then
+        local data = game:GetService('HttpService'):JSONDecode(response.Body)
+        print('One-time use invite created:', data.code)
+
+        -- Send the invite link to Discord through the webhook
+        sendWebhookMessage('One-time use invite created: https://discord.gg/' .. data.code)
+    else
+        warn('Failed to create one-time use invite:', response.StatusMessage)
+    end
+end
+
+-- Function to send a message to a Discord webhook
+function sendWebhookMessage(message)
+    local postData = game:GetService('HttpService'):JSONEncode({
+        content = message,
+    })
+
+    game:GetService('HttpService'):PostAsync(webhookUrl, postData, Enum.HttpContentType.ApplicationJson)
+end
+
+-- Call the function to create a one-time use invite
+createOneTimeInvite()
