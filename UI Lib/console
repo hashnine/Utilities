@@ -26,12 +26,6 @@ function Console:Window(consoledebugger)
     local ConsoleContainer = Instance.new("ScrollingFrame")
     local ConsoleContainerUIListLayout = Instance.new("UIListLayout")
     local WindowTitle = Instance.new("TextLabel")
-    local AutoScroll_Locked = Instance.new("Frame")
-    local AutoScroll_LockedUICorner = Instance.new("UICorner")
-    local AutoScroll_Locked_Inner = Instance.new("Frame")
-    local AutoScroll_Locked_InnerUICorner = Instance.new("UICorner")
-    local AutoScroll_Locked_Title = Instance.new("TextLabel")
-    local AutoScroll_Locked_Title_2 = Instance.new("TextLabel")
     
     nevermiss_C.Name = "nevermiss_C"
     nevermiss_C.Parent = game.CoreGui
@@ -153,59 +147,6 @@ function Console:Window(consoledebugger)
     WindowTitle.TextColor3 = Color3.fromRGB(220, 220, 220)
     WindowTitle.TextSize = 14.000
     WindowTitle.TextXAlignment = Enum.TextXAlignment.Left
-    
-    AutoScroll_Locked.Name = "AutoScroll_Locked"
-    AutoScroll_Locked.Parent = Window
-    AutoScroll_Locked.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-    AutoScroll_Locked.Position = UDim2.new(0, 474, 0, 11)
-    AutoScroll_Locked.Size = UDim2.new(0, 32, 0, 20)
-    AutoScroll_Locked.ZIndex = 3
-    
-    AutoScroll_LockedUICorner.CornerRadius = UDim.new(0, 1000)
-    AutoScroll_LockedUICorner.Name = "AutoScroll_LockedUICorner"
-    AutoScroll_LockedUICorner.Parent = AutoScroll_Locked
-    
-    AutoScroll_Locked_Inner.Name = "AutoScroll_Locked_Inner"
-    AutoScroll_Locked_Inner.Parent = AutoScroll_Locked
-    AutoScroll_Locked_Inner.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-    AutoScroll_Locked_Inner.BorderSizePixel = 0
-    AutoScroll_Locked_Inner.Position = UDim2.new(0, 2, 0, 2)
-    AutoScroll_Locked_Inner.Size = UDim2.new(0, 16, 0, 16)
-    AutoScroll_Locked_Inner.ZIndex = 4
-    
-    AutoScroll_Locked_InnerUICorner.CornerRadius = UDim.new(0, 1000)
-    AutoScroll_Locked_InnerUICorner.Name = "AutoScroll_Locked_InnerUICorner"
-    AutoScroll_Locked_InnerUICorner.Parent = AutoScroll_Locked_Inner
-    
-    AutoScroll_Locked_Title.Name = "AutoScroll_Locked_Title"
-    AutoScroll_Locked_Title.Parent = Window
-    AutoScroll_Locked_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    AutoScroll_Locked_Title.BackgroundTransparency = 1.000
-    AutoScroll_Locked_Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
-    AutoScroll_Locked_Title.BorderSizePixel = 0
-    AutoScroll_Locked_Title.Position = UDim2.new(0, 394, 0, 14)
-    AutoScroll_Locked_Title.Size = UDim2.new(0, 80, 0, 14)
-    AutoScroll_Locked_Title.ZIndex = 4
-    AutoScroll_Locked_Title.Font = Enum.Font.GothamSemibold
-    AutoScroll_Locked_Title.Text = ""
-    AutoScroll_Locked_Title.TextColor3 = Color3.fromRGB(100, 100, 100)
-    AutoScroll_Locked_Title.TextSize = 14.000
-    AutoScroll_Locked_Title.TextXAlignment = Enum.TextXAlignment.Left
-    
-    AutoScroll_Locked_Title_2.Name = "AutoScroll_Locked_Title"
-    AutoScroll_Locked_Title_2.Parent = Window
-    AutoScroll_Locked_Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    AutoScroll_Locked_Title_2.BackgroundTransparency = 1.000
-    AutoScroll_Locked_Title_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-    AutoScroll_Locked_Title_2.BorderSizePixel = 0
-    AutoScroll_Locked_Title_2.Position = UDim2.new(0, 520, 0, 14)
-    AutoScroll_Locked_Title_2.Size = UDim2.new(0, 80, 0, 14)
-    AutoScroll_Locked_Title_2.ZIndex = 4
-    AutoScroll_Locked_Title_2.Font = Enum.Font.GothamSemibold
-    AutoScroll_Locked_Title_2.Text = ""
-    AutoScroll_Locked_Title_2.TextColor3 = Color3.fromRGB(220, 220, 220)
-    AutoScroll_Locked_Title_2.TextSize = 14.000
-    AutoScroll_Locked_Title_2.TextXAlignment = Enum.TextXAlignment.Left
 
     local function ResizeContainer()
         ConsoleContainer.CanvasSize = UDim2.new(0, 0, 0, ConsoleContainerUIListLayout.AbsoluteContentSize.Y + ConsoleContainerUIListLayout.Padding.Offset)
