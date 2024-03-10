@@ -206,7 +206,7 @@ function Console:Window(consoledebugger)
             TextLabel.TextColor3 = Color3.fromRGB(83, 230, 50)
         elseif Type == ("vip") then
             TextLabel.Text = tostring(VipTitle)
-            TextLabel.TextColor3 = Color3.fromRGB(122, 122, 50)
+            TextLabel.TextColor3 = Color3.fromRGB(255, 255, 50)
         elseif Type == ("fail") then
             TextLabel.Text = tostring(FailTitle)
             TextLabel.TextColor3 = Color3.fromRGB(255, 84, 84)
