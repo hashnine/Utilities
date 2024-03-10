@@ -174,6 +174,7 @@ function Console:Window(consoledebugger)
         local now = os.time()
         local Time = tostring(pretty_date(os.date("*t", now)))
         local DefaultTitle = "["..tostring(Time).."]".." "..tostring(PromptTitle)
+        local VipTitle = "["..tostring(Time).."]".." {VIP} : "..tostring(PromptTitle)
         local SuccessTitle = "["..tostring(Time).."]".." {Success} : "..tostring(PromptTitle)
         local FailTitle = "["..tostring(Time).."]".." {Error} : "..tostring(PromptTitle)
         local WarningTitle = "["..tostring(Time).."]".." {Warning} : "..tostring(PromptTitle)
@@ -203,6 +204,9 @@ function Console:Window(consoledebugger)
         elseif Type == ("success") then
             TextLabel.Text = tostring(SuccessTitle)
             TextLabel.TextColor3 = Color3.fromRGB(83, 230, 50)
+        elseif Type == ("vip") then
+            TextLabel.Text = tostring(VipTitle)
+            TextLabel.TextColor3 = Color3.fromRGB(122, 122, 50)
         elseif Type == ("fail") then
             TextLabel.Text = tostring(FailTitle)
             TextLabel.TextColor3 = Color3.fromRGB(255, 84, 84)
