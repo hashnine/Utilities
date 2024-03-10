@@ -1,0 +1,37 @@
+EXPLOIT MUST SUPPORT: 
+
+    * hookfunction
+
+    * getnamecallmethod 
+
+     * checkcaller
+
+     * getconnections
+
+Supported Elements:
+
+    * Dropdowns
+
+    * Buttons
+
+    * Labels
+
+    * Keybinds
+
+    * Sliders
+
+    * Color Pickers
+    
+
+Cool Features:
+    
+
+    * Auto delete's old-ui on re-execution
+
+    * Always On Top [ 3D UI will appear over everything else ]
+
+    * Gap Changer [ Change the gap distance in between the elements ]
+
+    * Breathing [ The UI will simulate a breathing animation ]
+
+    * Y, Z Position Changer [ Modify how far back and how high the UI is ]
